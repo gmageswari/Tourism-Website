@@ -1,0 +1,41 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #6d479e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form-container{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.signUpBtnStyle{
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.signUplable{
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: #343f46;
+}
+
+.signUpinputStyle{
+    height: 30px;
+    width: 100%;
+}

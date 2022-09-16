@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="launchPage.css"/>
 </head>
 <body>
+    <div class="container">
+        <form class="signup-form-container" onsubmit="signUpClicked(event)">
+            <label for="username" class="signUplable">Username</label>
+            <input id="username" type="text" placeholder="Username" class="signUpinputStyle" />
+            <label for="password" class="signUplable">Password</label>
+            <input id="password" type="password" placeholder="password" class="signUpinputStyle" />
+            <button type="submit" class="signUpBtnStyle">Sign Up</button>
+        </form>
+    </div>
     
+    <script src="lanchPage.js"></script>
 </body>
 </html>
