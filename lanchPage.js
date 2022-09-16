@@ -67,6 +67,7 @@ loginButton.onclick = function (event) {
       if (userArray[i].password === LoginPassword.value) {
         passwordIsCorrect = true;
         loginSuccessOrFailure.textContent = "Login Successfull";
+        loginsuccesfull(userArray[i].username)
         break;
       }
       break;
@@ -79,3 +80,16 @@ loginButton.onclick = function (event) {
     loginSuccessOrFailure.textContent = "Password is wrong";
   }
 };
+
+function loginsuccesfull(name){
+    let x=document.getElementById("after-login");
+    x.style.display="flex";
+    let total=document.getElementById("total");
+    total.style.display="none"
+    document.getElementById("name").innerHTML=`${name}`
+
+}
+
+
+
+
