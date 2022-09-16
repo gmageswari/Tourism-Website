@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="launchPage.css">
+    <script src="https://kit.fontawesome.com/01dbf3ee1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="total">
@@ -45,14 +46,57 @@
             <button type="submit" class="signUpBtnStyle">Sign Up</button>
         </form>
     </div>
-    <div id="after-login">
+
+    <div id = "nav" class = "navigation-bar container-no">
+        <ul class = "nav-list">
+            <li class = "nav-list-items"><button onclick=homeClicked() class = "nav-button">Home</button></li>
+            <li class = "nav-list-items"><button onclick=trendingClicked() class = "nav-button">Trending</button></li>
+            <li class = "nav-list-items"><button onclick=contactClicked() class = "nav-button">Contact Us</button></li>
+            <li><button onclick = logout() class = "logout-button" type = "button">Logout</button></li>
+        </ul>
+    </div>
+
+    
+
+   
+
+    
+
+    <div id = "home" class = "container-no">
+        
+            <div id="after-login">
         <h1 >Hi <span id="name"></span></h1>
         <br/>
         <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0NaKaRBxIRvAJVpa4ORd1hVBsP8OdiCEzQ&usqp=CAU">
 
     </div>
+        
+    </div>
 
-   
+    <div id = "trending" class = "container-no">
+        <h1>
+            Add Trending
+        </h1>
+    </div>
+
+    <div id = "contact" class = "container-no">
+        <div class = "contact">
+            <h1>
+                Contact Us
+            </h1>
+            <div>
+                <i class="fa-brands fa-instagram icon"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook icon"></i>
+            </div>
+            <div>
+                <p>Mobile Number: 1234567890</p>
+            </div>
+        </div>
+        
+    </div>
+
     
     <script src="lanchPage.js"></script>
 </body>
