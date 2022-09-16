@@ -17,18 +17,38 @@ function signUpClicked(event) {
   event.preventDefault();
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
-  signedUpUsers.push({
-    username,
-    password,
-  });
-  document.getElementById("username").value = "";
-  document.getElementById("password").value = "";
-  localStorage.setItem("users", JSON.stringify(signedUpUsers));
-  let signUpcontainer = document.getElementById("signup-container");
-  signUpcontainer.style.display = "none";
-  let uiEle = document.getElementById("total");
-  uiEle.style.display = "flex";
-  console.log("Stored successfully");
+  let password_Error=document.querySelector(".password_error")
+  password_Error.textContent=''
+  if(isNaN(username[0])==false || username.length<8){
+    password_Error.textContent="*user name is always starts with alphabet and minimum length should be 8 characters"
+
+
+  }
+  else{
+    if(password.length<8){
+    
+        password_Error.textContent="*password length should be  minimum 8 characters"
+    
+      }
+      else{
+        signedUpUsers.push({
+            username,
+            password,
+          });
+          document.getElementById("username").value = "";
+          document.getElementById("password").value = "";
+          localStorage.setItem("users", JSON.stringify(signedUpUsers));
+          let signUpcontainer = document.getElementById("signup-container");
+          signUpcontainer.style.display = "none";
+          let uiEle = document.getElementById("total");
+          uiEle.style.display = "flex";
+          console.log("Stored successfully");
+    
+      }
+
+  }
+  
+  
 }
 
 let loginButton = document.querySelector("#loginButton");
