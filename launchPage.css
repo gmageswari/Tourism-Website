@@ -97,6 +97,9 @@
     border: none;
     border-radius: 5px;
     align-self: center;
+    background-color:  #6d479e;
+    color: white;
+   
 }
 
 .signUplable{
@@ -178,6 +181,7 @@ body{
 .signup-button{
     position: relative;
     left: 2.5cm;
+
 }
 .input{
     height: 0.5cm;
@@ -232,4 +236,11 @@ body{
     color:#281c38;
     font-size: 10px;
     padding: 10px;
+}
+.password_error{
+    height: 30px;
+    width: 100%;
+    margin-top: -15px;
+    font-size: 10px;
+    color: #ba1859;
 }
