@@ -67,7 +67,13 @@ loginButton.onclick = function (event) {
       if (userArray[i].password === LoginPassword.value) {
         passwordIsCorrect = true;
         loginSuccessOrFailure.textContent = "Login Successfull";
-        loginsuccesfull(userArray[i].username)
+
+        loginsuccesfull(userArray[i].username);
+
+        document.getElementById("nav").className =
+          "navigation-bar container-yes";
+        document.getElementById("home").className = "container-yes";
+
         break;
       }
       break;
@@ -81,15 +87,36 @@ loginButton.onclick = function (event) {
   }
 };
 
-function loginsuccesfull(name){
-    let x=document.getElementById("after-login");
-    x.style.display="flex";
-    let total=document.getElementById("total");
-    total.style.display="none"
-    document.getElementById("name").innerHTML=`${name}`
-
+function loginsuccesfull(name) {
+  let x = document.getElementById("after-login");
+  x.style.display = "flex";
+  let total = document.getElementById("total");
+  total.style.display = "none";
+  document.getElementById("name").innerHTML = `${name}`;
 }
 
+function homeClicked() {
+  document.getElementById("contact").className = "container-no";
+  document.getElementById("home").className = "container-yes";
+  document.getElementById("trending").className = "container-no";
+}
 
+function trendingClicked() {
+  document.getElementById("contact").className = "container-no";
+  document.getElementById("home").className = "container-no";
+  document.getElementById("trending").className = "container-yes";
+}
 
+function contactClicked() {
+  document.getElementById("contact").className = "container-yes";
+  document.getElementById("home").className = "container-no";
+  document.getElementById("trending").className = "container-no";
+}
 
+function logout() {
+  document.getElementById("nav").className = "navigation-bar container-no";
+  document.getElementById("contact").className = "container-no";
+  document.getElementById("home").className = "container-no";
+  document.getElementById("trending").className = "container-no";
+  document.getElementById("total").style.display = "flex";
+}
