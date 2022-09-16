@@ -23,9 +23,9 @@
                 <br><br>
                 <input id = "loginPassword" class="input"type="password" placeholder="Password">
                 <br><br>
-                <button id = "loginButton" class="button">LOGIN</button>
+                <button id = "loginButton" onclick="afterlogin()"class="button">LOGIN</button>
                 <br>
-                <p class="or">OR</p>
+                <p class="signup-button">Don't have an account?</p>
                 <button type="button" class="button" onclick="showSignupPage()">SIGNUP</button>
 
                 <p id = "p1"></p>
@@ -44,6 +44,12 @@
             <input id="password" type="password" placeholder="password" class="signUpinputStyle" />
             <button type="submit" class="signUpBtnStyle">Sign Up</button>
         </form>
+    </div>
+    <div id="after-login">
+        <h1 >Hi <span id="name"></span></h1>
+        <br/>
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK0NaKaRBxIRvAJVpa4ORd1hVBsP8OdiCEzQ&usqp=CAU">
+
     </div>
 
    
