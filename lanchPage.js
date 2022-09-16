@@ -24,6 +24,10 @@ function signUpClicked(event) {
   document.getElementById("username").value = "";
   document.getElementById("password").value = "";
   localStorage.setItem("users", JSON.stringify(signedUpUsers));
+  let signUpcontainer = document.getElementById("signup-container");
+  signUpcontainer.style.display = "none";
+  let uiEle = document.getElementById("total");
+  uiEle.style.display = "flex";
   console.log("Stored successfully");
 }
 
