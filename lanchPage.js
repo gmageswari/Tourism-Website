@@ -7,6 +7,13 @@ if(userArr !== null){
 else{
     signedUpUsers = [];
 }
+function showSignupPage(){
+    let signUpcontainer = document.getElementById("signup-container");
+    signUpcontainer.style.display = "flex";
+    let uiEle = document.getElementById("total");
+    uiEle.style.display = "none";
+}
+
 function signUpClicked(event){  
     event.preventDefault();
     let username = document.getElementById("username").value;
