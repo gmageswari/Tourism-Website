@@ -170,3 +170,13 @@ body{
     top: 2.6cm;
     right: 3.2cm;
 }
+.trendingTourismContainer{
+    height: 90vh;
+    width: 98vw;
+    background-color: #e0d5ed;
+}
+.trending-heading{
+    color:  #543c73;
+    font-size: 30px;
+    font-weight: 600;
+}
