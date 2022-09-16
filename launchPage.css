@@ -1,3 +1,4 @@
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -38,4 +39,51 @@
 .signUpinputStyle{
     height: 30px;
     width: 100%;
+}
+
+#total{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+#top{
+    border-style: solid;
+    height: 1cm;
+    width: 10cm;
+    background-color: #f4a261;
+}
+#bottom{
+    border-style: solid;
+    height: 10cm;
+    width: 10cm;
+    background-color: #e9c46a;
+}
+#inside-bottom{
+    position: relative;
+    left: 0.5cm;
+}
+#heading{
+    text-align: center;
+    position: relative;
+    bottom: 0.3cm;
+}
+.button{
+    border-style: none;
+    height: 0.5cm;
+    width: 2cm;
+    border-radius: 5%;
+    position: relative;
+    left: 3cm;
+}
+.or{
+    position: relative;
+    left: 3.5cm;
+}
+.input{
+    height: 0.5cm;
+    width: 8cm;
+
 }
