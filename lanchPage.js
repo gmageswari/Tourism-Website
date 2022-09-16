@@ -68,6 +68,11 @@ loginButton.onclick = function (event) {
         passwordIsCorrect = true;
         loginSuccessOrFailure.textContent = "Login Successfull";
 
+        userName.value = "";
+        LoginPassword.value = "";
+        loginSuccessOrFailure.textContent = "";
+        passwordError.textContent = "";
+
         loginsuccesfull(userArray[i].username);
 
         document.getElementById("nav").className =
@@ -119,4 +124,8 @@ function logout() {
   document.getElementById("home").className = "container-no";
   document.getElementById("trending").className = "container-no";
   document.getElementById("total").style.display = "flex";
+}
+
+function viewmore() {
+  trendingClicked();
 }
